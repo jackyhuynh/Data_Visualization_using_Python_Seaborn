@@ -8,16 +8,14 @@ output: html_document
 ```{r setup, include=FALSE,warning=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(reticulate)
-use_python("C:/Users/Valued Customer/python-workspace")
+use_python("python")
+use_virtualenv("myenv")
 
 ```
 
-```{python}
-import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
-import seaborn as sns
-import matplotlib as mpl
+
+```{python py}
+import pandas
 ```
 ```{}
 
